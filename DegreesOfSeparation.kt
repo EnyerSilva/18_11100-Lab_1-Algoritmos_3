@@ -110,7 +110,7 @@ class ListaAdyacenciaGrafo<T> : Grafo<T> {
         distancias[inicio] = 0
 
         while (cola.isNotEmpty()) {
-            val actual = cola.poll()
+            val actual = cola.remove()
             val dActual = distancias[actual]!!
 
             // Explorar vecinos (nivel por nivel)
